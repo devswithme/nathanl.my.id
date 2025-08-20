@@ -29,7 +29,7 @@ function Home() {
             </span>
           </a>
         </div>
-        <Parallax className="relative h-fit">
+        <Parallax outputRange={["2rem", "4rem"]} className="relative h-fit">
           <LinkedIn />
         </Parallax>
       </section>
@@ -38,7 +38,7 @@ function Home() {
           className="text-5xl md:text-7xl flex flex-wrap leading-[1] font-medium"
           value="I develop a scalable and modern web app from your ideas."
         />
-        <Parallax>
+        <Parallax outputRange={["0rem", "2rem"]}>
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -50,26 +50,28 @@ function Home() {
           </motion.p>
         </Parallax>
       </section>
-      {data.map(({ home }, i) => (
-        <Parallax
-          key={i}
-          outputRange={[`${[1, 2].includes(i) ? 6 : 0}rem`, `${i}rem`]}
-          className={`w-full md:w-1/2 group relative aspect-video overflow-hidden ${
-            i % 2 == 0 ? "float-right" : ""
-          }`}
-        >
-          <a href={home.path}>
-            <img
-              src={home.thumbnail.path}
-              className="duration-200 ease-in-out aspect-video object-cover object-top group-hover:brightness-50"
-            />
-            <img
-              src={home.thumbnail.logo.path}
-              className={`duration-200 ease-in-out opacity-0 group-hover:opacity-100 ${home.thumbnail.logo.width} aspect-square top-1/2 left-1/2 -translate-1/2 absolute`}
-            />
-          </a>
-        </Parallax>
-      ))}
+      <div className="sm:space-y-24">
+        {data.map(({ home }, i) => (
+          <Parallax
+            key={i}
+            outputRange={[`${[1, 2].includes(i) ? i * 4 : i}rem`, `${i}rem`]}
+            className={`w-full md:w-1/2 group relative sm:aspect-video aspect-[4/3] overflow-hidden ${
+              i % 2 == 0 ? "float-right" : ""
+            }`}
+          >
+            <a href={home.path}>
+              <img
+                src={home.thumbnail.path}
+                className="duration-200 ease-in-out sm:aspect-video aspect-[4/3] object-cover object-top group-hover:brightness-50"
+              />
+              <img
+                src={home.thumbnail.logo.path}
+                className={`duration-200 ease-in-out opacity-0 group-hover:opacity-100 ${home.thumbnail.logo.width} aspect-square top-1/2 left-1/2 -translate-1/2 absolute`}
+              />
+            </a>
+          </Parallax>
+        ))}
+      </div>
       <section>
         <span className="font-mono uppercase text-sm">Get in touch</span>
         <Paragraph

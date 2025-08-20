@@ -39,8 +39,10 @@ const Detail = () => {
           </a>
         </div>
         {filtered.images.map((image, i) => (
-          <Parallax outputRange={[`${i * 12}rem`, `${i}rem`]}>
-            <img src={image} />
+          <Parallax
+            outputRange={[`${[1].includes(i) ? i * 6 : i}rem`, `${i}rem`]}
+          >
+            <img src={image} className="aspect-[4/3] w-full object-cover" />
           </Parallax>
         ))}
       </section>
@@ -50,7 +52,7 @@ const Detail = () => {
         offset={["start 0.9", "start 0.5"]}
       />
       <section>
-        <Parallax outputRange={["0rem", "-15rem"]}>
+        <Parallax outputRange={["0rem", "-10rem"]}>
           <img src={filtered.grid} className="w-full" />
         </Parallax>
         <div className="flex flex-col sm:flex-row justify-between gap-16">
