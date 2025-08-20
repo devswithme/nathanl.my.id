@@ -1,28 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/me.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="I develop a scalable and modern web app from your ideas.">
+    <meta
+      name="description"
+      content="I develop a scalable and modern web app from your ideas."
+    />
 
-    <meta property="og:url" content="https://nathanl.my.id">
-    <meta property="og:type" content="Portfolio">
-    <meta property="og:title" content="Me">
-    <meta property="og:description" content="I develop a scalable and modern web app from your ideas.">
-    <meta property="og:image" content="/me.svg">
+    <meta property="og:url" content="https://nathanl.my.id" />
+    <meta property="og:type" content="Portfolio" />
+    <meta property="og:title" content="Me" />
+    <meta
+      property="og:description"
+      content="I develop a scalable and modern web app from your ideas."
+    />
+    <meta property="og:image" content="/me.svg" />
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="nathanl.my.id">
-    <meta property="twitter:url" content="https://nathanl.my.id">
-    <meta name="twitter:title" content="Portfolio">
-    <meta name="twitter:description" content="I develop a scalable and modern web app from your ideas.">
-    <meta name="twitter:image" content="/me.svg">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="nathanl.my.id" />
+    <meta property="twitter:url" content="https://nathanl.my.id" />
+    <meta name="twitter:title" content="Portfolio" />
+    <meta
+      name="twitter:description"
+      content="I develop a scalable and modern web app from your ideas."
+    />
+    <meta name="twitter:image" content="/me.svg" />
 
     <title>Nathan Limahardja</title>
   </head>
   <body>
     <div id="root"></div>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YY9YYWB1F4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-YY9YYWB1F4", {
+        page_path: window.location.pathname,
+      });
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

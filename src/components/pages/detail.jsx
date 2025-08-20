@@ -6,6 +6,7 @@ import { Parallax } from "../ui/parallax";
 import { ArrowLeft } from "lucide-react";
 import { Paragraph } from "../ui/paragraph";
 import transition from "../ui/transition.jsx";
+import { logEvent } from "../../../lib/utils.js";
 
 const Detail = () => {
   const params = useParams();
@@ -29,6 +30,7 @@ const Detail = () => {
           />
           <a
             href={filtered.button.href}
+            onClick={() => logEvent("social", { type: filtered.button.href })}
             className="px-5 py-3 border flex items-center gap-3 rounded-full font-mono font-medium w-fit hover:bg-blue-600 hover:text-white bg-white relative z-10"
           >
             <img src={filtered.button.logo} className="w-10 object-cover" />

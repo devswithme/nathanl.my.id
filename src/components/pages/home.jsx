@@ -7,6 +7,7 @@ import LinkedIn from "../ui/linkedin.jsx";
 import { motion } from "motion/react";
 import transition from "../ui/transition.jsx";
 import data from "../../../data/entries.json";
+import { logEvent } from "../../../lib/utils.js";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
 
           <a
             href="https://discord.gg/dP9h7WVuG4"
+            onClick={() => logEvent("social", { type: "discord" })}
             className="px-5 py-3 border flex items-center gap-3 rounded-full font-mono font-medium w-fit hover:bg-indigo-600 hover:text-white relative z-10 bg-white"
           >
             <img src="me1.jpg" className="size-8 rounded-full" />
@@ -59,7 +61,10 @@ function Home() {
               i % 2 == 0 ? "float-right" : ""
             }`}
           >
-            <a href={home.path}>
+            <a
+              href={home.path}
+              onClick={() => logEvent("social", { type: home.path })}
+            >
               <img
                 src={home.thumbnail.path}
                 className="duration-200 ease-in-out sm:aspect-video aspect-[4/3] object-cover object-top group-hover:brightness-50"
@@ -81,6 +86,7 @@ function Home() {
         />
         <a
           href="https://wa.me/6587470061"
+          onClick={() => logEvent("social", { type: "whatsapp" })}
           className="px-5 py-3 border flex items-center gap-3 rounded-full font-mono font-medium w-fit hover:bg-green-600 hover:text-white bg-white"
         >
           <img src="me1.jpg" className="size-8 rounded-full" />

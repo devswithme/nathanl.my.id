@@ -1,4 +1,5 @@
 import { BadgeCheck } from "lucide-react";
+import { logEvent } from "../../../lib/utils";
 
 function LinkedIn() {
   return (
@@ -23,6 +24,7 @@ function LinkedIn() {
         </span>
         <a
           href="https://www.linkedin.com/in/nathan-limahardja"
+          onClick={() => logEvent("social", { type: "linkedin" })}
           className="px-5 py-3 border flex items-center gap-3 rounded-full font-mono font-medium w-fit hover:bg-blue-600 hover:text-white relative z-10 bg-white mt-6"
         >
           <img src="me.jpg" className="size-8 rounded-full" />
