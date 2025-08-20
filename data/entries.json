@@ -1,0 +1,102 @@
+[
+  {
+    "home": {
+      "path": "fysite",
+      "thumbnail": {
+        "path": "/fysite/3.png",
+        "logo": {
+          "path": "/fysite/brand.svg",
+          "width": "w-28"
+        }
+      }
+    },
+    "detail": {
+      "transition": "fysite.id 🛍️",
+      "title": "Fysite",
+      "button": {
+        "href": "https://fysite.id",
+        "logo": "/fysite/logo.svg"
+      },
+      "images": ["/fysite/1.png", "/fysite/2.png"],
+      "grid": "fysite/grid.svg",
+      "heading": "We're a digital asset marketplace platform! ✨",
+      "paragraph": "Starting from an idea at Suntec Singapore, dreaming of a multi-tenant platform that has it's own currency.",
+      "subparagraph": "It's done in a week by myself with Next.js and Supabase technology."
+    }
+  },
+  {
+    "home": {
+      "path": "mathcom",
+      "thumbnail": {
+        "path": "/mathcom/2.png",
+        "logo": {
+          "path": "/mathcom/logo.png",
+          "width": "w-36"
+        }
+      }
+    },
+    "detail": {
+      "transition": "MathCom AI 🤖",
+      "title": "Math Com AI",
+      "button": {
+        "href": "https://mathcom.co",
+        "logo": "/mathcom/logo.png"
+      },
+      "images": ["/mathcom/1.png", "/mathcom/3.png"],
+      "grid": "mathcom/grid.svg",
+      "heading": "AI-Powered Math Learning Community.",
+      "paragraph": "Inherited from a National Hackathon idea, 1st winner. Now, has brought to real-life impact.",
+      "subparagraph": "Implementing AI and discussion platform with an intern from Paypal."
+    }
+  },
+  {
+    "home": {
+      "path": "n8n",
+      "thumbnail": {
+        "path": "/n8n/1.png",
+        "logo": {
+          "path": "/n8n/logo_dark.png",
+          "width": "w-48 h-8"
+        }
+      }
+    },
+    "detail": {
+      "transition": "Dunia Coding 💻",
+      "title": "N8N Seminar",
+      "button": {
+        "href": "https://duniacoding.id/event/workshop-ecommerce-with-n8n",
+        "logo": "/n8n/logo.png"
+      },
+      "images": ["/n8n/5.png", "n8n/4.png"],
+      "grid": "n8n/grid.svg",
+      "heading": "Teaching a hands-on AI workshop to small businesses.",
+      "paragraph": "Forced by a recklessly condition, ended up learning and tutoring 50+ registrars from Indonesia.",
+      "subparagraph": "Implementing Telegram with AI, payment and invoice integration."
+    }
+  },
+  {
+    "home": {
+      "path": "cloud",
+      "thumbnail": {
+        "path": "/cloud/1.webp",
+        "logo": {
+          "path": "/cloud/logo.png",
+          "width": "w-28"
+        }
+      }
+    },
+    "detail": {
+      "transition": "The Little Cloud ☁️",
+      "title": "The Little Cloud",
+      "button": {
+        "href": "https://thelittlecloud.vercel.app",
+        "logo": "/cloud/logo.png"
+      },
+      "images": ["/cloud/D3.jpeg", "/cloud/M3.jpeg"],
+      "grid": "cloud/grid.svg",
+      "heading": "My first commercial web project - 2023",
+      "paragraph": "Suggest ideas to implement glassmorphism style and embedded chat bot from the references.",
+      "subparagraph": "Using HTML, CSS, and Vanilla Javascript only."
+    }
+  }
+]
