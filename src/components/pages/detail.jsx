@@ -50,17 +50,15 @@ const Detail = () => {
         offset={["start 0.9", "start 0.5"]}
       />
       <section>
-        <div className="flex justify-between gap-16">
-          <h1 className="text-4xl flex-3/4 leading-snug">
-            {filtered.paragraph}
-          </h1>
+        <Parallax outputRange={["0rem", "-15rem"]}>
+          <img src={filtered.grid} className="w-full" />
+        </Parallax>
+        <div className="flex flex-col sm:flex-row justify-between gap-16">
+          <h1 className="text-4xl flex-3/4">{filtered.paragraph}</h1>
           <p className="flex-1/4 font-mono uppercase tracking-tight text-sm">
             {filtered.subparagraph}
           </p>
         </div>
-        <Parallax outputRange={["4rem", "10rem"]}>
-          <img src={filtered.grid} className="w-full" />
-        </Parallax>
       </section>
     </main>
   );

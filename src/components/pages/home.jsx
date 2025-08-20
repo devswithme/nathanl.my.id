@@ -73,7 +73,7 @@ function Home() {
       <section>
         <span className="font-mono uppercase text-sm">Get in touch</span>
         <Paragraph
-          className="my-6 text-6xl md:text-7    xl flex flex-wrap leading-[1] font-medium"
+          className="my-6 text-6xl md:text-7xl flex flex-wrap leading-[1] font-medium"
           value="Let's work together!"
           offset={["start 0.9", "start 0.5"]}
         />
