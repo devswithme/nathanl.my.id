@@ -20,7 +20,7 @@ function Home() {
           />
 
           <a
-            href="https://discord.gg/dP9h7WVuG4"
+            href="https://fydemy.com"
             onClick={() => logEvent("social", { type: "discord" })}
             className="px-5 py-3 border flex items-center gap-3 rounded-full font-mono font-medium w-fit hover:bg-indigo-600 hover:text-white relative z-10 bg-white"
           >
@@ -40,16 +40,11 @@ function Home() {
           className="text-5xl md:text-7xl flex flex-wrap leading-[1] font-medium"
           value="I develop a scalable and modern web app from your ideas."
         />
-        <Parallax outputRange={["0rem", "2rem"]}>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 2, duration: 1 }}
-            className="font-mono uppercase text-sm"
-          >
+        <Parallax outputRange={["2rem", "2rem"]}>
+          <p className="font-mono uppercase text-sm">
             Come from a background of Marketing, Creative, AI and Software
             Engineering.
-          </motion.p>
+          </p>
         </Parallax>
       </section>
       <div className="sm:space-y-24">
