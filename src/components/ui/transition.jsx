@@ -6,7 +6,7 @@ const transition = (OgComponent, value) => {
     <>
       <OgComponent />
       <motion.div
-        className="fixed inset-0 w-screen h-screen bg-neutral-800 origin-top z-10"
+        className="fixed inset-0 w-screen h-screen bg-neutral-800 origin-top z-30"
         initial={{ scaleY: 1 }}
         onAnimationStart={() => {
           document.body.style.overflow = "hidden";
@@ -31,7 +31,7 @@ const transition = (OgComponent, value) => {
         transition={{
           delay: 1,
         }}
-        className="text-center w-full text-4xl text-white z-20 fixed top-1/2 left-1/2 -translate-1/2"
+        className="text-center w-full text-4xl text-white z-40 fixed top-1/2 left-1/2 -translate-1/2"
       >
         {value}
       </motion.h1>

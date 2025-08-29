@@ -8,10 +8,20 @@ import { motion } from "motion/react";
 import transition from "../ui/transition.jsx";
 import data from "../../../data/entries.json";
 import { logEvent } from "../../../lib/utils.js";
+import { File } from "lucide-react";
 
 function Home() {
   return (
     <>
+      <a
+        target="_blank"
+        href="https://drive.google.com/file/d/1lO6MnHcWIqQY8Cgcmpee8TvRuUWZiOR8/view?usp=sharing"
+        onClick={() => logEvent("social", { type: "whatsapp" })}
+        className="fixed top-5 right-5 z-20 px-5 py-3 border flex items-center gap-3 rounded-full font-mono font-medium w-fit hover:bg-orange-600 hover:text-white bg-white"
+      >
+        <File className="fill-orange-600" />
+        Resume
+      </a>
       <section className="flex flex-col md:flex-row justify-between">
         <div className="space-y-10">
           <Title
