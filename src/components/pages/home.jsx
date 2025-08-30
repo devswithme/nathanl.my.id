@@ -13,15 +13,6 @@ import { File } from "lucide-react";
 function Home() {
   return (
     <>
-      <a
-        target="_blank"
-        href="https://drive.google.com/file/d/1lO6MnHcWIqQY8Cgcmpee8TvRuUWZiOR8/view?usp=sharing"
-        onClick={() => logEvent("social", { type: "whatsapp" })}
-        className="fixed top-5 right-5 z-20 px-5 py-3 border flex items-center gap-3 rounded-full font-mono font-medium w-fit hover:bg-orange-600 hover:text-white bg-white"
-      >
-        <File className="fill-orange-600" />
-        Resume
-      </a>
       <section className="flex flex-col md:flex-row justify-between">
         <div className="space-y-10">
           <Title
@@ -30,14 +21,15 @@ function Home() {
           />
 
           <a
-            href="https://fydemy.com"
-            onClick={() => logEvent("social", { type: "discord" })}
-            className="px-5 py-3 border flex items-center gap-3 rounded-full font-mono font-medium w-fit hover:bg-indigo-600 hover:text-white relative z-10 bg-white"
+            target="_blank"
+            href="https://drive.google.com/file/d/1Z6VUJ9bTgHZg3J6hoMDko1Al5JGVgulo/view?usp=sharing"
+            onClick={() => logEvent("social", { type: "resume" })}
+            className="px-5 py-3 border flex items-center gap-3 rounded-full font-mono font-medium w-fit hover:bg-teal-600 hover:text-white relative z-10 bg-white"
           >
-            <img src="me1.jpg" className="size-8 rounded-full" />
-            Discord
-            <span className="bg-green-500 size-3 relative">
-              <span className="absolute bg-green-500 animate-ping size-3" />
+            <File className="fill-teal-500" strokeWidth={1} />
+            Resume
+            <span className="bg-teal-500 size-3 relative">
+              <span className="absolute bg-teal-500 animate-ping size-3" />
             </span>
           </a>
         </div>
