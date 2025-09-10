@@ -1,12 +1,17 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with React and Framer Motion. Inspired by LinkedIn and [Dennis Snellenberg](https://www.dennissnellenberg.com) style.
 
-Currently, two official plugins are available:
+![1.png](https://github.com/devswithme/nathanl.my.id/blob/main/data/github/1.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![2.png](https://github.com/devswithme/nathanl.my.id/blob/main/data/github/2.png)
 
-## Expanding the ESLint configuration
+## 🚀 Breakthrough
+1. Adopted parallax and on-scroll animation reveal technique using framer motion.
+2. Implemented simple wipe-down transition with heading
+3. Centralized the overall website data into one file at `data/entries.json`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 📖 Learn this for FREE!
+
+Visit our github profile and seek for a Discord link at [fydemy.com](https://fydemy.com).
